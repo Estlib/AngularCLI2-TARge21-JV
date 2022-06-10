@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'AngularCLI2-TARge21-JV'`, () => {
+  it(`should have as title 'firstproject01'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('AngularCLI2-TARge21-JV');
+    expect(app.title).toEqual('firstproject01');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('AngularCLI2-TARge21-JV app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('firstproject01 app is running!');
   });
 });
